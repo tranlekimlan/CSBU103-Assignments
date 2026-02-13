@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy Tính Cơ Bản</title>
+    <style>
+        /* 1. PHẦN TRANG TRÍ (CSS) - Làm đẹp đơn giản */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Căn giữa màn hình */
+        }
+
+        .may-tinh {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        /* Màn hình hiển thị số */
+        #manHinh {
+            width: 100%;
+            height: 50px;
+            font-size: 24px;
+            text-align: right; /* Chữ chạy từ phải sang trái */
+            margin-bottom: 10px;
+            box-sizing: border-box; /* Đảm bảo không bị tràn khung */
+        }
+
+        /* Lưới chứa các nút bấm */
+        .khung-nut {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Chia làm 4 cột đều nhau */
+            gap: 10px; /* Khoảng cách giữa các nút */
+        }
+
+        button {
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ddd; /* Đổi màu nhẹ khi di chuột */
+        }
+
+        /* Màu riêng cho nút Bằng (=) và nút Xóa (C) */
+        .nut-bang { background-color: #4CAF50; color: white; }
+        .nut-xoa  { background-color: #f44336; color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="may-tinh">
+        
+        <input type="text" id="manHinh" readonly>
+
+        <div class="khung-nut">
+            <button onclick="xoaManHinh()" class="nut-xoa">C</button>
+            <button onclick="themVao('/')">/</button>
+            <button onclick="themVao('*')">x</button>
+            <button onclick="themVao('%')">Mod</button> <button onclick="themVao('7')">7</button>
+            <button onclick="themVao('8')">8</button>
+            <button onclick="themVao('9')">9</button>
+            <button onclick="themVao('-')">-</button>
+
+            <button onclick="themVao('4')">4</button>
+            <button onclick="themVao('5')">5</button>
+            <button onclick="themVao('6')">6</button>
+            <button onclick="themVao('+')">+</button>
+
+            <button onclick="themVao('1')">1</button>
+            <button onclick="themVao('2')">2</button>
+            <button onclick="themVao('3')">3</button>
+            <button onclick="tinhKetQua()" class="nut-bang" style="grid-row: span 2;">=</button>
+
+            <button onclick="themVao('0')" style="grid-column: span 2;">0</button> <button onclick="themVao('.')">.</button>
+        </div>
+    </div>
+
+    <script>
+        // Lấy ô màn hình ra để xử lý
+        let manHinh = document.getElementById("manHinh");
+
+        // Hàm 1: Thêm số hoặc dấu vào màn hình khi bấm nút
+        function themVao(kyTu) {
+            manHinh.value = manHinh.value + kyTu;
+        }
+
+        // Hàm 2: Xóa trắng màn hình (Nút C)
+        function xoaManHinh() {
+            manHinh.value = "";
+        }
+
+        // Hàm 3: Tính toán kết quả (Nút =)
+        function tinhKetQua() {
+            try {
+                // Hàm eval() sẽ tự động tính chuỗi phép tính (VD: "2 + 2")
+                manHinh.value = eval(manHinh.value); 
+            } catch (loi) {
+                // Nếu người dùng nhập sai (VD: 5 ++ 5), báo lỗi
+                manHinh.value = "Lỗi"; 
+            }
+        }
+    </script>
+
+</body>
+</html>
