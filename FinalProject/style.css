@@ -1,0 +1,271 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2a0944;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  background-color: #1a0033;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+header button {
+  background-color: #6a0dad;
+  color: #ffcc00;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* DANH SÁCH NHÂN VẬT */
+.character-list {
+  text-align: center;
+  padding: 20px;
+}
+
+.characters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.char-card {
+  background: #3b0a45; /* deep violet */
+  border: 1px solid #b388ff; /* soft purple outline */
+  border-radius: 15px;
+  width: 200px;
+  padding: 18px;
+  color: #f0e6ff;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(179, 136, 255, 0.2);
+}
+
+.char-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #b388ff;
+}
+
+.char-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.char-card h3 {
+  margin-top: 10px;
+  color: #ffcc00;
+}
+
+/* TRANG NHÂN VẬT */
+.character-detail {
+  text-align: left;
+  padding: 30px;
+}
+
+.character-detail img {
+  width: 200px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1a0033;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.lobby-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  overflow: visible; /* Để viền glow không bị cắt */
+}
+
+.lobby-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 110%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(120deg, #6a0dad, #00ffff, #b388ff, #6a0dad);
+  background-size: 300% 300%;
+  filter: blur(40px);
+  z-index: 0;
+  animation: glowMove 5s ease-in-out infinite;
+  border-radius: 16px;
+  opacity: 0.6;
+}
+
+@keyframes glowMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.lobby-img {
+  position: relative;
+  z-index: 1; /* Đặt ảnh lên trên hiệu ứng */
+  width: 600px; /* có thể chỉnh nhỏ/lớn tuỳ ý */
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.lobby-img:hover {
+  transform: scale(1.03);
+}
+
+.hello-line {
+  text-align: center;
+  font-size: 20px;
+}
+
+.hello-img {
+  width: 45%; /* chỉnh kích thước tùy ý */
+  vertical-align: middle; /* giúp ảnh nằm thẳng hàng với emoji */
+}
+
+.stats-title {
+  text-align: center;
+  color: #ffcc00;
+  text-shadow: 0 0 8px #ffcc00;
+  margin-top: 25px;
+}
+
+/* Table container */
+.stats-table {
+  width: 50%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  font-family: "Trebuchet MS", sans-serif;
+  color: #fff;
+  background: radial-gradient(circle at top left, #1a1a2e, #0d0d1a);
+  animation: glowBorder 5s ease-in-out infinite;
+  table-layout: fixed;
+}
+
+/* Header cells */
+.stats-table th {
+  text-align: center;
+  background: linear-gradient(90deg, #00ffff, #6a0dad);
+  color: #fff;
+  text-shadow: 0 0 5px #00ffff;
+  padding: 12px;
+  font-size: 18px;
+  border-bottom: 2px solid #00ffff;
+}
+
+/* Regular cells */
+.stats-table td {
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background 0.3s, transform 0.3s;
+}
+
+/* Hover effect */
+.stats-table tr:hover td {
+  background: rgba(0, 255, 255, 0.1);
+  transform: scale(1.01);
+}
+
+/* Glow animation (reuse from earlier effects) */
+@keyframes glowBorder {
+  0% { box-shadow: 0 0 10px #00ffff; border-color: #00ffff; }
+  50% { box-shadow: 0 0 20px #6a0dad; border-color: #6a0dad; }
+  100% { box-shadow: 0 0 10px #00ffff; border-color: #00ffff; }
+}
+
+
+
+
+.info-title {
+  text-align: center;
+  color: #ffcc00;
+  text-shadow: 0 0 8px #ffcc00;
+  margin-top: 25px;
+}
+
+/* Table container */
+.info-table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  font-family: "Trebuchet MS", sans-serif;
+  color: #fff;
+  background: radial-gradient(circle at top left, #1a1a2e, #0d0d1a);
+  animation: glowBorder 5s ease-in-out infinite;
+}
+
+/* Header cells */
+.info-table th {
+  text-align: center;
+  background: linear-gradient(90deg, #00ffff, #6a0dad);
+  color: #fff;
+  text-shadow: 0 0 5px #00ffff;
+  padding: 12px;
+  font-size: 18px;
+  border-bottom: 2px solid #00ffff;
+}
+
+/* Regular cells */
+.info-table td {
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background 0.3s, transform 0.3s;
+}
+
+/* Hover effect */
+.info-table tr:hover td {
+  background: rgba(0, 255, 255, 0.1);
+  transform: scale(1.01);
+}
+
+/* Glow animation (reuse from earlier effects) */
+@keyframes glowBorder {
+  0% { box-shadow: 0 0 10px #00ffff; border-color: #00ffff; }
+  50% { box-shadow: 0 0 20px #6a0dad; border-color: #6a0dad; }
+  100% { box-shadow: 0 0 10px #00ffff; border-color: #00ffff; }
+}
+

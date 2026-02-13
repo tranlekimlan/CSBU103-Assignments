@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sát thủ - Soul Knight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+  <header>
+    <h1>💥 Sát thủ 💥</h1>
+    <nav>
+      <a href="index.html">← Quay lại Trang chủ</a>
+    </nav>
+  </header>
+
+  <section class="character-detail">
+    
+    <h2 style="color: #ffcc00; text-align: center;">Thông tin nhân vật</h2>
+
+    <table class="info-table">
+      <tr>
+        <th>Nhân vật</th>
+        <th>Mô tả</th>
+      </tr>
+      <tr>
+        <td><img src="images/assassin.gif" alt="Sát thủ"></td>
+        <td>
+          <ul>
+            <li>Assassin (Sát thủ) là một nhân vật sử dụng được.</li>
+            <li> Anh mặc một bộ đồ đỏ-đen với chiếc khăn đỏ (nhìn khá giống như ninja), đôi mắt anh ánh lên một màu vàng nghệ.</li>
+            <li>Một khi được mở khoá, anh cũng có thể được gặp trong quá trình chơi dưới dạng một NPC.</li>
+            <li>Khi tương tác, anh sẽ đi theo và hỗ trợ người chơi như một đồng minh nhưng chỉ trong màn ấy thôi, tay cầm Blood Blade (Huyết Gươm).</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+
+    <h2 style="color: #ffcc00; text-align: center;">Chỉ số cơ bản</h2>
+    <table class="stats-table">
+      <tr>
+        <th>Loại chỉ số</th>
+        <th>Ban đầu</th>
+        <th>Sau nâng cấp</th>
+      </tr>
+      <tr>
+        <td>❤️ Máu</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>🛡️ Giáp</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>⚡ Năng lượng</td>
+        <td>180</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>💥 Tỉ lệ chí mạng</td>
+        <td>10</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>🩸 Sát thương tầm gần</td>
+        <td>5</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>🥾 Tốc độ</td>
+        <td>6.5</td>
+        <td>6.5</td>
+      </tr>
+    </table>
+
+
+    <h2 style="color: #ffcc00; text-align: center;">Vũ khí khởi đầu</h2>
+    <table class="stats-table">
+      <tr>
+        <th>Vũ khí chưa nâng cấp</th>
+        <th>Vũ khí sau khi nâng cấp</th>
+      </tr>
+      <tr>
+        <td><img src="images/bloodblade.png" alt="bloodblade">
+            <h3>Blood blade</h3>
+        </td>
+        <td><img src="images/upgradedbloodblade.png" alt="upgradedbloodblade">
+            <h3>Upgraded blood blade</h3>
+        </td>
+      </tr>
+    </table>
+
+    <h2 style="color: #ffcc00; text-align: center;">Kĩ năng</h2>
+
+    <table class="info-table">
+      <tr>
+        <th>Kĩ năng</th>
+        <th>Mô tả kĩ năng</th>
+        <th>Giá mở khoá</th>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Skill_Dark_Blade.png" alt="Skill_Dark_Blade">
+          <h3 style="text-align: center;">Dark Blade</h3>
+        </td>
+        <td>
+          <ul>
+            <li><strong style="color: #ffcc00;">Kỹ năng cơ bản:</strong></li>
+            <li>Thực hiện một cú chém mạnh mẽ. Trong lúc lướt, sát thủ không thể bị tấn công. Hạ gục kẻ địch sẽ làm mới thời gian hồi chiêu (tối đa 5 lần).</li>
+            <li>Kích hoạt kỹ năng sẽ đưa Sát Thủ vào trạng thái lướt trong <strong>2 giây</strong> hoặc cho đến khi tiêu diệt kẻ địch.</li>
+            <li>Trong trạng thái này:
+              <ul>
+                <li>Tăng <strong>tốc độ di chuyển</strong> thêm +5.</li>
+                <li>Miễn nhiễm mọi sát thương và có thể xuyên qua đạn.</li>
+                <li>Không miễn nhiễm với hiệu ứng trạng thái (như Đốt, Độc...).</li>
+                <li>Đòn tấn công đầu tiên được thay thế bằng <strong>cú chém Bóng Tối</strong> gây <strong>8 sát thương</strong> (có 10% chí mạng).</li>
+              </ul>
+            </li>
+            <li>Tiêu diệt kẻ địch (bằng bất kỳ cách nào) sẽ <strong>đặt lại hồi chiêu</strong> ngay lập tức, có thể kích hoạt tối đa 4 lần trước khi kỹ năng phải hồi lại bình thường.</li>
+            <li>Nếu để kỹ năng hồi đầy, số lần đặt lại sẽ được khôi phục về 4.</li>
+            <li>Thời gian hồi chiêu: <strong>11 giây</strong> (hoặc <strong>9 giây</strong> khi nâng cấp).</li>
+            <li>Sau khi sử dụng kỹ năng, người chơi không thể tấn công bằng vũ khí trong vài giây.</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp kỹ năng:</strong></li>
+            <li>Tăng sát thương của cú chém từ <strong>8</strong> lên <strong>12</strong>.</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp Mentor:</strong></li>
+            <li>Mỗi khi hạ gục kẻ địch trong lúc kỹ năng đang hoạt động, thời gian hồi chiêu sẽ luôn được <strong>đặt lại ngay lập tức</strong>.</li>
+          </ul>
+        </td>
+        <td>
+          Miễn phí
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="images/Skill_Doppelganger.png" alt="Skill_Doppelganger">
+          <h3 style="text-align: center;">Doppleganger</h3>
+        </td>
+        <td>
+          <ul>
+            <li><strong style="color: #ffcc00;">Kỹ năng cơ bản:</strong></li>
+            <li>Triệu hồi một <strong>bản sao</strong> hỗ trợ người chơi trong chiến đấu.</li>
+            <li>Sát Thủ ném bom khói xuống đất và tạo ra một bản sao mang vũ khí hiện tại, tương tự hiệu ứng của <em>Gậy Ảo Ảnh</em>.</li>
+            <li>Bản sao có lượng máu bằng <strong>2 lần tổng Máu + Giáp tối đa</strong> của người chơi.<br>
+              Ví dụ: Sát Thủ cấp tối đa có 5 Máu và 5 Giáp → bản sao có (5 + 5) × 2 = 20 HP.</li>
+            <li>Các buff hoặc vật phẩm tăng Máu / Giáp sẽ ảnh hưởng đến HP của bản sao. Buff nhân đôi máu cũng sẽ nhân đôi HP bản sao.</li>
+            <li>Bản sao sẽ biến mất khi nhận đủ sát thương và không tồn tại qua tầng tiếp theo.</li>
+            <li>Bản sao có thể sử dụng <strong>phụ kiện vũ khí</strong> (Weapon Attachments) của vũ khí được sao chép, kể cả <em>Energy Hilt</em>.</li>
+            <li>Không thể sử dụng kỹ năng <em>Super Buddy</em> hoặc cú đấm đầu tiên của <em>One Punch</em>.</li>
+            <li>Nếu sử dụng kỹ năng khi bản sao đang tồn tại, bản sao sẽ được <strong>tái tạo lại máu và vũ khí</strong> theo vũ khí hiện tại.</li>
+            <li>Thời gian hồi chiêu: <strong>9 giây</strong> (hoặc <strong>7 giây</strong> khi nâng cấp).</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp kỹ năng:</strong></li>
+            <li>Có thể triệu hồi tối đa <strong>2 bản sao</strong> cùng lúc. Khi gọi thêm bản sao mới trong lúc đã đủ, bản sao cũ hơn sẽ bị thay thế.</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp Mentor:</strong></li>
+            <li>Bản sao có <strong>lượng máu gấp đôi</strong> (có thể cộng dồn với buff) và kích thước lớn hơn <strong>25%</strong>.</li>
+            <li>Bản sao trở nên <strong>hung hăng hơn</strong> và có vùng tấn công (hitbox) lớn hơn.</li>
+          </ul>
+        </td>
+        <td>
+          7000 Gems
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="images/Skill_Invisibility.png" alt="Skill_Invisibility">
+          <h3 style="text-align: center;">Invisibility</h3>
+        </td>
+        <td>
+          <ul>
+            <li><strong style="color: #ffcc00;">Kỹ năng cơ bản:</strong></li>
+            <li>Biến mất cùng đồng đội xung quanh. Đòn tấn công kế tiếp sẽ mạnh hơn.</li>
+            <li>Khi kích hoạt, Sát Thủ cùng đồng minh, thú cưng và người đi theo sẽ tàng hình trong <strong>tối đa 6 giây</strong>. Kẻ địch không thể nhắm mục tiêu vào họ.</li>
+            <li>Tàng hình kết thúc khi Sát Thủ tấn công. Những người được bảo vệ có thể mất tàng hình riêng biệt.</li>
+            <li>Trong trạng thái này, người chơi được bảo vệ khỏi lửa, độc, bẫy và đám mây độc, nhưng không thể tương tác với rương, NPC hay vật phẩm.</li>
+            <li>Khi tàng hình kết thúc, đòn tấn công trong <strong>1 giây</strong> tiếp theo sẽ gây <strong>1.5x sát thương</strong> (làm tròn xuống).</li>
+            <li>Nếu phá tàng hình bằng tấn công, người chơi được <strong>0.75 giây bất tử</strong> và có thể xuyên qua đạn.</li>
+            <li>Đòn tấn công khi đó nhận thêm <strong>+100% tỉ lệ chí mạng</strong>, tăng sát thương chí mạng lên khoảng <strong>3x</strong>.</li>
+            <li>Đạn bắn to hơn và đòn cận chiến có tầm xa hơn. Sát thương cơ bản không đổi.</li>
+            <li>Một số vật phẩm (như <em>Scratch Card</em>, <em>Strength Potion</em>, <em>Void Sword</em>) không làm mất tàng hình.</li>
+            <li>Khi kích hoạt, tất cả người được bảo vệ đều vô địch trong 1 giây đầu, kể cả khi tấn công sớm hơn.</li>
+            <li>Thời gian hồi chiêu: <strong>6 giây</strong> (hoặc <strong>4 giây</strong> khi nâng cấp).</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp kỹ năng:</strong></li>
+            <li>Tăng <strong>tốc độ di chuyển +2.5</strong> trong thời gian tàng hình.</li>
+            <li>Hiệu ứng này cộng dồn với các buff khác và kéo dài cho đến khi kỹ năng kết thúc.</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp Mentor:</strong></li>
+            <li>Trong suốt thời gian tàng hình, Sát Thủ hoàn toàn <strong>miễn nhiễm sát thương</strong> và có thể xuyên qua đạn của kẻ địch.</li>
+            <li>Thời gian bất tử sau khi tấn công phá tàng hình tăng từ <strong>0.75 giây</strong> lên <strong>1.5 giây</strong>.</li>
+          </ul>
+        </td>
+        <td>
+          7000 Gems
+        </td>
+      </tr>
+    </table>
+
+    <h2 style="color: #ffcc00; text-align: center;">Khi cường hoá ở cấp độ 6</h2>
+    <table class="stats-table">
+      <tr>
+        <th>Hình ảnh</th>
+        <th>Tác dụng</th>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Buff_Reflect.png" alt="Buff_Reflect">
+          <h3 style="text-align: center;">Reflect Buff</h3>
+        </td>
+        <td>
+          Passive ability: </b>  Vũ khí cận chiến có thể phản đạn.
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 Soul Knight Info</p>
+  </footer>
+</body>
+</html>
+

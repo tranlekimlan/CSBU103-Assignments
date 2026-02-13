@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captain - Soul Knight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+  <header>
+    <h1>💥 Captain 💥</h1>
+    <nav>
+      <a href="index.html">← Quay lại Trang chủ</a>
+    </nav>
+  </header>
+
+  <section class="character-detail">
+    
+    <h2 style="color: #ffcc00; text-align: center;">Thông tin nhân vật</h2>
+
+    <table class="info-table">
+      <tr>
+        <th>Nhân vật</th>
+        <th>Mô tả</th>
+      </tr>
+      <tr>
+        <td><img src="images/knight.gif" alt="Hiệp sĩ"></td>
+        <td>
+          <ul>
+            <li>The Captain là một nhân vật có thể chơi được (playable character).</li>
+            <li>Anh ta đội một chiếc mũ hải tặc màu đỏ, đeo một chiếc bịt mắt (eyepatch) ở mắt trái, và mặc một bộ đồng phục hải quân màu đỏ.
+                Anh ta có một con vẹt cưng</li>
+            <li>Sau khi được mở khóa, anh ta cũng có thể được gặp trong quá trình chơi như một NPC.</li>
+            <li>Khi tương tác, anh ta sẽ đi theo và hỗ trợ người chơi như một người đi theo chỉ trong tầng chơi hiện tại.</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+
+    <h2 style="color: #ffcc00; text-align: center;">Chỉ số cơ bản</h2>
+    <table class="stats-table">
+      <tr>
+        <th>Loại chỉ số</th>
+        <th>Ban đầu</th>
+        <th>Sau nâng cấp</th>
+      </tr>
+      <tr>
+        <td>❤️ Máu</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>🛡️ Giáp</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>⚡ Năng lượng</td>
+        <td>200</td>
+        <td>220</td>
+      </tr>
+      <tr>
+        <td>💥 Tỉ lệ chí mạng</td>
+        <td>5</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>🩸 Sát thương tầm gần</td>
+        <td>4</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>🥾 Tốc độ</td>
+        <td>6.5</td>
+        <td>6.5</td>
+      </tr>
+    </table>
+
+
+    <h2 style="color: #ffcc00; text-align: center;">Vũ khí khởi đầu</h2>
+    <table class="stats-table">
+      <tr>
+        <th>Vũ khí chưa nâng cấp</th>
+        <th>Vũ khí sau khi nâng cấp</th>
+      </tr>
+      <tr>
+        <td><img src="images/badpistol.jpg" alt="badpistol">
+            <h3>Bad pistol</h3>
+        </td>
+        <td><img src="images/spritenewpistol.png" alt="spritenewpistol">
+            <h3>Sprite new pistol</h3>
+        </td>
+      </tr>
+    </table>
+
+    <h2 style="color: #ffcc00; text-align: center;">Kĩ năng</h2>
+
+    <table class="info-table">
+      <tr>
+        <th>Kĩ năng</th>
+        <th>Mô tả kĩ năng</th>
+        <th>Giá mở khoá</th>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Skill_Barrel_Blowout.jpg" alt="Skill_Barrel_Blowout">
+          <h3 style="text-align: center;">Barrel Blowout</h3>
+        </td>
+        <td>
+          <ul>
+            <li><strong style="color: #ffcc00;">Kỹ năng cơ bản:</strong></li>
+            <li>Captain có thể đặt tối đa 3 thùng thuốc nổ (Lửa/Băng/Sét). Mỗi thùng ngẫu nhiên nhận một loại nguyên tố khi được đặt. 
+                Giữ nút kỹ năng có thể chọn một nguyên tố cụ thể.</li>
+            <li>Đặt thùng cuối cùng sẽ kích nổ tất cả các thùng đồng minh, kích hoạt hiệu ứng nguyên tố tương ứng của chúng. 
+                Sự kết hợp nguyên tố giữa các thùng sẽ gây ra các phản ứng nguyên tố khác nhau.</li>
+            <li>Số lượng Thùng có tối đa 3 (Băng, Lửa, Sét)</li>
+            <li>Cách Đặt Nhấn nhanh: Triệu hồi theo thứ tự Băng, Lửa, Sét lên mục tiêu gần nhất (≤ 8 ô).
+            Giữ: Chọn vị trí (≤ 8 ô) và nguyên tố mong muốn.</li>
+            <li>Cơ chế Hồi chiêu có 3 lần sạc. Đặt thùng thứ 1 hoặc 2 phải theo sau trong 5 giây, nếu không sẽ hồi chiêu.
+                 Thời gian hồi chiêu 6 (5) giây khôi phục cả 3 lần sạc.</li>
+            <li>Đổi vũ khí giữa chừng sẽ hủy kỹ năng ngay lập tức.</li>
+            <li>Nếu đang nạp đạn hoặc sạc năng lượng khi kỹ năng kết thúc, bản sao sẽ bắn phát cuối trước khi biến mất.</li>
+            <li>Áp dụng cho Multiplayer Rings: ví dụ dùng Ring xanh với Dual Wield sẽ tốn 30 năng lượng và hồi 2 máu cho tất cả người chơi.</li>
+            <li>Kỹ năng không nhân đôi hiệu ứng modifier.</li>
+            <li>Hồi chiêu: 10 giây (hoặc 8 giây khi nâng cấp).</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp kỹ năng:</strong></li>
+            <li>Hạ gục kẻ địch trong thời gian kỹ năng hoạt động sẽ kéo dài thời gian hiệu lực thêm 0.5 giây mỗi mạng.</li>
+            <li>Thời gian tối đa vẫn bị giới hạn ở 5 giây.</li>
+            <li>Giết địch khi kỹ năng đang hồi chiêu không giảm thời gian hồi.</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp Mentor:</strong></li>
+            <li>Trong suốt thời gian hoạt động, hồi 3 năng lượng mỗi 0.5 giây.</li>
+          </ul>
+        </td>
+        <td>
+          Miễn phí
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="images/Skill_Superior_Fire.jpg" alt="Skill_Superior_Fire">
+          <h3 style="text-align: center;">Superior Fire</h3>
+        </td>
+        <td>
+          <ul>
+            <li><strong style="color: #ffcc00;">Kỹ năng cơ bản:</strong></li>
+            <li>Hiệp Sĩ sẽ triệu hồi tất cả các vũ khí hiện có trong 5 giây. Trong thời gian này, mỗi đòn tấn công sẽ sử dụng cả hai vũ khí với độ trễ nhỏ. Năng lượng (Energy) vẫn bị tiêu hao bình thường.</li>
+            <li>Nếu vũ khí có chế độ thay đổi (như Varkolyn Assault Rifle), bản sao sẽ dựa theo chế độ hiện tại khi kích hoạt kỹ năng.</li>
+            <li>Khi tấn công ở cự ly gần, Hiệp Sĩ sẽ thực hiện đòn cận chiến cơ bản nếu đang sử dụng ít nhất một vũ khí tầm xa, kể cả khi đang cầm vũ khí cận chiến khác.</li>
+            <li>Thời gian hồi chiêu bắt đầu sau khi kỹ năng kết thúc.</li>
+            <li>Đổi vũ khí giữa chừng sẽ hủy kỹ năng ngay lập tức.</li>
+            <li>Nếu Hiệp Sĩ có thể mang 3 vũ khí, kỹ năng này sẽ giúp triệu hồi tất cả cùng lúc.</li>
+            <li>Thời gian hồi chiêu: 10 giây (hoặc 8 giây khi nâng cấp).</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp kỹ năng:</strong></li> 
+            <li>Hạ gục kẻ địch khi kỹ năng đang hoạt động sẽ kéo dài thời gian hiệu lực thêm 0.5 giây cho mỗi mạng.</li>
+            <li>Thời gian tối đa không vượt quá giới hạn cơ bản là 5 giây.</li>
+            <li>Hạ gục kẻ địch khi kỹ năng đang hồi chiêu sẽ không làm giảm thời gian hồi.</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp Mentor:</strong></li> 
+            <li>Trong suốt thời gian kỹ năng hoạt động, hồi 3 năng lượng mỗi 0.5 giây.</li>
+          </ul>
+        </td>
+        <td>
+          5000 Gems
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="images/Skill_Chaotic_Strike.jpg" alt="Skill_Chaotic_Strike">
+          <h3 style="text-align: center;">Chaotic Strike</h3>
+        </td>
+        <td>
+          <ul>
+            <li><strong style="color: #ffcc00;">Kỹ năng cơ bản:</strong></li>
+            <li>Trong 5 giây, mọi đòn tấn công sẽ mang yếu tố “hỗn loạn”, gây hiệu ứng ngẫu nhiên khi trúng kẻ địch.</li>
+            <li>Các hiệu ứng có thể bao gồm: Đốt cháy 🔥, Độc ☠️, Đóng băng ❄️, Choáng 💫, và Giật điện ⚡.</li>
+            <li>Hiệu ứng có thể cộng dồn với nguyên tố sẵn có của vũ khí.</li>
+            <li>Một số đòn tấn công đặc biệt (đạn phản, vụ nổ, tia năng lượng, hiệu ứng tượng...) sẽ không kích hoạt hiệu ứng hỗn loạn.</li>
+            <li>Các đòn được tung ra trong khi kỹ năng hoạt động vẫn giữ hiệu ứng đến khi biến mất.</li>
+            <li>Thời gian hồi chiêu: <strong>8 giây</strong> (hoặc <strong>6 giây</strong> khi nâng cấp).</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp kỹ năng:</strong></li>
+            <li>Hạ gục kẻ địch khi kỹ năng đang hoạt động sẽ kéo dài thời gian thêm <strong>0.5 giây</strong> mỗi lần.</li>
+            <li>Thời gian tổng cộng không vượt quá <strong>5 giây</strong>.</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li><strong style="color: #ffcc00;">Nâng cấp Mentor:</strong></li>
+            <li>Hồi 3 năng lượng mỗi 0.5 giây trong suốt thời gian kỹ năng hoạt động.</li>
+          </ul>
+        </td>
+        <td>
+          6000 Gems
+        </td>
+      </tr>
+    </table>
+
+    <h2 style="color: #ffcc00; text-align: center;">Khi cường hoá ở cấp độ 6</h2>
+    <table class="stats-table">
+      <tr>
+        <th>Hình ảnh</th>
+        <th>Tác dụng</th>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Buff_Strong_Shield.jpg" alt="Buff_Strong_Shield">
+          <h3 style="text-align: center;">Strong Sheild Buff</h3>
+        </td>
+        <td>
+          Passive ability: </b>  Không nhận thêm sát thương khi mất khiên.
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 Soul Knight Info</p>
+  </footer>
+</body>
+</html>

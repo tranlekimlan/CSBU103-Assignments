@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bard - Soul Knight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>💥 Bard 💥</h1>
+    <nav>
+      <a href="index.html">← Quay lại Trang chủ</a>
+    </nav>
+  </header>
+
+  <section class="character-detail">
+    
+    <h2 style="color: #ffcc00; text-align: center;">Thông tin nhân vật</h2>
+
+    <table class="info-table">
+      <tr>
+        <th>Nhân vật</th>
+        <th>Mô tả</th>
+      </tr>
+      <tr>
+        <td><img src="images/bard.webp" alt="Bard"></td>
+        <td>
+            <ul>
+                <li><strong>Bard (Nhạc Công)</strong> là một nhân vật có thể chơi được (thường mở khóa qua sự kiện hoặc mua bằng tiền thật/đá quý tùy phiên bản).</li>
+                <li><strong>Ngoại hình:</strong> Một cô gái đội mũ nồi xanh lá cây (beret) có gắn lông vũ trắng, mắt màu hổ phách và tóc vàng bạch kim ngắn.</li>
+                <li><strong>Phong cách chơi:</strong> Hỗ trợ (Support) thuần túy. Kỹ năng yêu cầu người chơi phải tương tác theo nhịp điệu (Quick Time Event) để kích hoạt các bùa lợi mạnh mẽ.</li>
+                <li>Khi gặp dưới dạng **NPC**, cô ấy sẽ ban tặng bùa lợi: Khi tấn công liên tục sẽ rơi ra các nốt nhạc, nhặt vào giúp tăng kích thước đạn và tốc độ di chuyển.</li>
+            </ul>
+        </td>
+      </tr>
+    </table>
+
+
+    <h2 style="color: #ffcc00; text-align: center;">Chỉ số cơ bản</h2>
+    <table class="stats-table">
+      <tr>
+        <th>Loại chỉ số</th>
+        <th>Ban đầu</th>
+        <th>Sau nâng cấp</th>
+      </tr>
+      <tr>
+        <td>❤️ Máu</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>🛡️ Giáp</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>⚡ Năng lượng</td>
+        <td>200</td>
+        <td>220</td>
+      </tr>
+      <tr>
+        <td>💥 Tỉ lệ chí mạng</td>
+        <td>3</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>🩸 Sát thương tầm gần</td>
+        <td>5</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>🥾 Tốc độ</td>
+        <td>6.5</td>
+        <td>6.5</td>
+      </tr>
+    </table>
+
+
+    <h2 style="color: #ffcc00; text-align: center;">Vũ khí khởi đầu</h2>
+    <table class="stats-table">
+      <tr>
+        <th>Vũ khí chưa nâng cấp</th>
+        <th>Vũ khí sau khi nâng cấp</th>
+      </tr>
+      <tr>
+        <td><img src="images/forestmelody.png" alt="Bard's Guitar">
+            <h3>Forest Melody</h3>
+        </td>
+        <td><img src="images/upgradedforestmelody.png" alt="Upgraded Guitar">
+            <h3>Upgraded Forest Melody</h3>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: left; padding: 10px;">
+            <em>*Đặc điểm: Bắn ra các nốt nhạc gây sát thương. Tốc độ bắn nhanh giống súng trường.</em>
+        </td>
+      </tr>
+    </table>
+
+    <h2 style="color: #ffcc00; text-align: center;">Kĩ năng</h2>
+
+    <table class="info-table">
+      <tr>
+        <th>Kĩ năng</th>
+        <th>Mô tả kĩ năng</th>
+        <th>Giá mở khoá</th>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Skill_Melodic_Pulse.png" alt="Skill_Melodic_Pulse">
+          <h3 style="text-align: center;">Melodic Pulse</h3>
+        </td>
+        <td>
+            <ul>
+                <li><strong style="color: #ffcc00;">Kỹ năng cơ bản:</strong></li>
+                <li>Khi kích hoạt, một thanh nhịp điệu (Metronome) sẽ hiện ra. Người chơi cần nhấn nút kỹ năng đúng lúc các nốt nhạc chạm vạch.</li>
+                <li>Thành công sẽ kích hoạt chuỗi hiệu ứng Buff cho toàn đội (cộng dồn tối đa 3 tầng):</li>
+                <li><strong>Tầng 1:</strong> Tăng 20% tốc độ đánh.</li>
+                <li><strong>Tầng 2:</strong> Tăng thêm 2 sát thương cho vũ khí và 20% tỉ lệ chí mạng.</li>
+                <li><strong>Tầng 3:</strong> Giảm tiêu hao năng lượng của vũ khí đi 1 điểm.</li>
+                <li>Nếu bấm trượt hoặc hết thời gian, kỹ năng sẽ đi vào hồi chiêu.</li>
+                <li>Hồi chiêu: 12 giây (10 giây khi nâng cấp).</li>
+            </ul>
+
+            <hr>
+
+            <ul>
+                <li><strong style="color: #ffcc00;">Nâng cấp kỹ năng:</strong></li>
+                <li>Tăng thời gian duy trì của các hiệu ứng Buff.</li>
+                <li>Dễ dàng căn nhịp hơn (thanh nhịp điệu chậm lại).</li>
+            </ul>
+        </td>
+        <td>
+          Mặc định
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="images/Skill_Resonant_Symphony.png" alt="Skill Resonant Symphony">
+          <h3 style="text-align: center;">Resonant Symphony</h3>
+        </td>
+        <td>
+          <ul>
+            <li><strong style="color: #ffcc00;">Kỹ năng cơ bản:</strong></li>
+            <li>Bard đặt một nhạc cụ (Loa/Đàn) xuống đất, tạo ra một vùng ảnh hưởng (Vòng tròn 10 ô).</li>
+            <li><strong>Tác dụng lên Kẻ địch:</strong> Nhạc cụ sẽ kết nối (Link) tối đa 3 kẻ địch gần đó. Khi một kẻ địch trong liên kết chịu sát thương, sát thương đó sẽ được chia sẻ cho các kẻ địch còn lại (tương tự kỹ năng 2 của Robot nhưng bị động).</li>
+            <li><strong>Tác dụng lên Đồng minh:</strong> Người chơi đứng trong vòng tròn sẽ nhận được:
+                <ul>
+                    <li>Lớp giáp ảo tạm thời (+2 Giáp).</li>
+                    <li>Hồi phục năng lượng liên tục.</li>
+                    <li>Tăng tốc độ di chuyển và tốc độ đánh.</li>
+                </ul>
+            </li>
+            <li>Nhạc cụ cũng có thể chặn đạn của kẻ địch.</li>
+            <li>Hồi chiêu: 14 giây (12 giây khi nâng cấp).</li>
+          </ul>
+
+          <hr>
+
+            <ul>
+                <li><strong style="color: #ffcc00;">Nâng cấp kỹ năng:</strong></li>
+                <li>Nhạc cụ có máu cao hơn và tồn tại lâu hơn.</li>
+                <li>Hiệu ứng chia sẻ sát thương mạnh hơn.</li>
+            </ul>
+        </td>
+        <td>
+          8000 Gems (Đá quý)
+        </td>
+      </tr>
+    </table>
+
+    <h2 style="color: #ffcc00; text-align: center;">Khi cường hoá ở cấp độ 6</h2>
+    <table class="stats-table">
+      <tr>
+        <th>Hình ảnh</th>
+        <th>Tác dụng</th>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Buff_Musical_Note.png" alt="Buff Musical Note">
+          <h3 style="text-align: center;">Musical Note Buff</h3>
+        </td>
+        <td>
+          Passive ability: </b> Consecutive attacks or enemy deaths drop musical notes. Picking them up increases bullet size by 10% and movement speed by 5% for 3s, stacking up to 3 times
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 Soul Knight Info</p>
+  </footer>
+</body>
+</html>
