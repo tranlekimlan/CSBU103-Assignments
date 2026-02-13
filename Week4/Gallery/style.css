@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f0f44;
+  color: #e0e0e0;
+}
+
+header {
+  background-color: #180180;
+  text-align: center;
+  padding: 20px;
+  color: #ececec;
+}
+
+button {
+  width: 20%;
+  background-color: #180180;
+  color: #ececec;
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover{
+  background-color:#2800d8;
+  color: #ececec;
+  box-shadow: #ececec 0 4px 8px;
+}
+
+input {
+  width: 20%;
+  background-color: #180180;
+  color: #ececec;
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+input:hover{
+  background-color:#2800d8;
+  color: #ececec;
+  box-shadow: 0 4px 8px #ececec;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px #ececec;
+  transition: 0.2s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale (0.8);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+
+
+
+
+
+
+
+
+
+
+#caption {
+  color: #ececec;
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#expand {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.hidden {
+  display: none;
+}
+
+#expand.hidden {
+  display: none;
+}
+
+#viewing {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+
+
+
+
+.edit-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.edit-buttons button {
+  width: auto;
+  min-width: 100px;
+  padding: 10px 20px;
+}
+
+#delete-button {
+  background-color: red;
+  color: #ececec;
+}
+
+#delete-button:hover {
+  background-color: darkred;
+}
+

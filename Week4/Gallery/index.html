@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Photo Gallery</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Photo Gallery</h1>
+            <p>A place to save your imaginations</p>
+        </header>
+
+        <div class="controls">
+            <!-- Nhập URL -->
+            <input type="text" id="img-url" placeholder="Paster image URL here">
+            <button id="add-url-btn">Add from URL</button>
+
+            <!-- Upload file -->
+            <input type="file" id="img-file" accept="image/*">
+            <button id="add-file-btn">Upload Image</button>
+        </div>
+
+        <main class="gallery">
+            <img src="images/happy.png" alt="happy">
+            <img src="images/Potrait.jpg" alt="Potrait">
+            <img src="images/Logo.png" alt="Logo">
+            <img src="images/The_Duo.png" alt="The Duo">
+        </main>
+
+        <div id="expand" class="hidden">
+            <img id="viewing" src="" alt="zoom">
+            <p id="caption"></p>
+            <div class="edit-buttons">
+                <button id="delete-button">Delete</button>
+                <button id="collapse">Close</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
