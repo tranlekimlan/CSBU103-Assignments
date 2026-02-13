@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <style>
+        .error { color: red; font-size: 0.9em; display: none; }
+        .form-group { margin-bottom: 15px; }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Registration</h2>
+    
+    <form id="registerForm" action="/register" method="POST">
+        <div class="form-group">
+            <label>Username (Email):</label>
+            <input type="text" id="username" name="username" placeholder="example@email.com">
+            <span id="usernameError" class="error">Please enter the email correctly.</span>
+        </div>
+
+        <div class="form-group">
+            <label>Password:</label>
+            <input type="password" id="password" name="password">
+            <span id="passwordError" class="error">Password must has 6 digits, 1 number and 1 special character.</span>
+        </div>
+
+        <div class="form-group">
+            <label>Re-confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+            <span id="confirmError" class="error">Password does not match.</span>
+        </div>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <script src="js/validation.js"></script>
+</body>
+</html>
